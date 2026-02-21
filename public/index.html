@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel Booking</title>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/customer.css" />
+</head>
+<body>
+
+  <header class="header">
+    <h1>Luxury Stay Booking</h1>
+  </header>
+
+  <section class="controls">
+    <label>Select Floor</label>
+    <select id="floorSelect"></select>
+  </section>
+
+  <section class="rooms" id="roomGrid"></section>
+
+  <!-- Booking Modal -->
+  <div class="modal" id="bookingModal">
+    <div class="modal-content">
+      <h3 id="roomTitle"></h3>
+      <input type="text" id="name" placeholder="Full Name" />
+      <input type="text" id="mobile" placeholder="Mobile Number" />
+      <input type="text" id="address" placeholder="Address" />
+      <textarea id="purpose" placeholder="Purpose of Stay"></textarea>
+      <input type="number" id="days" placeholder="Number of Days" min="1" />
+      <button id="bookBtn">Confirm Booking</button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/config.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/customer.js"></script>
+
+</body>
+</html>
